@@ -17,7 +17,7 @@ const heroImages = [
 
 const navLinks = [
   { label: "Komunitas", href: "#join" },
-  { label: "The Blueprint", href: "https://clawnesia.id" },
+  { label: "The Blueprint", href: "https://blueprint.clawnesia.id" },
 ];
 
 const headingLines = [
@@ -120,7 +120,7 @@ export function Hero() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://clawnesia.id"
+                href="https://blueprint.clawnesia.id"
                 className="block w-full max-w-full whitespace-normal rounded-full border border-sand bg-white px-5 py-3 text-center font-ui text-[0.85rem] font-semibold text-carbon shadow-card transition-colors hover:bg-sand/50 md:w-auto md:px-8 md:py-4 md:text-body"
               >
                 Lihat Blueprint

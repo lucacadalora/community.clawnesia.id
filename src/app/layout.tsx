@@ -28,11 +28,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Clawnesia Build — Komunitas Builder AI Agents #1 di Indonesia",
   description: "Deploy AI Agents. Bangun Bisnis. Temukan Komunitasmu. Komunitas builder Indonesia untuk deploy AI agents yang bekerja 24/7.",
-  metadataBase: new URL("https://community.clawnesia.id"),
+  metadataBase: new URL("https://clawnesia.id"),
   openGraph: {
     title: "Clawnesia Build",
     description: "Komunitas Builder AI Agents #1 di Indonesia 🇮🇩",
-    url: "https://community.clawnesia.id",
+    url: "https://clawnesia.id",
     siteName: "Clawnesia Build",
     images: [
       {
