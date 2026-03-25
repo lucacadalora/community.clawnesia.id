@@ -22,7 +22,7 @@ const personas = [
     title: "Freelancer & Agency",
     description:
       "Satu AI agent bisa handle pekerjaan 3 asisten virtual untuk tim kamu.",
-    accent: "bg-slate text-cream",
+    accent: "bg-sand text-carbon",
     icon: "💼",
   },
   {
