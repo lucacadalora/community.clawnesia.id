@@ -2,7 +2,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 export function FounderLetter() {
   return (
-    <section className="section-shell dot-pattern">
+    <section className="section-shell">
       <div className="section-inner">
         <ScrollReveal className="relative w-full max-w-full overflow-hidden rounded-[32px] border border-sand bg-white p-6 shadow-card sm:p-8 md:p-12">
           <div className="absolute right-8 top-8 hidden h-28 w-28 rounded-[28px] bg-[radial-gradient(circle_at_top,rgba(255,143,80,0.18),rgba(255,235,224,0.9))] md:block" />

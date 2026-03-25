@@ -14,7 +14,7 @@ const sponsors = [
 
 export function Sponsors() {
   return (
-    <section className="section-shell dot-pattern">
+    <section className="section-shell">
       <div className="section-inner">
         <ScrollReveal className="max-w-2xl">
           <p className="eyebrow">Teknologi</p>
