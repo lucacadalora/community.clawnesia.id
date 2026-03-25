@@ -15,7 +15,7 @@ module.exports = {
       fontFamily: {
         heading: ['var(--font-host-grotesk)', "sans-serif"],
         sans: ['var(--font-plus-jakarta-sans)', "sans-serif"],
-        ui: ["Inter", "sans-serif"],
+        ui: ['var(--font-plus-jakarta-sans)', "sans-serif"],
       },
       colors: {
         claw: {
@@ -29,14 +29,14 @@ module.exports = {
             muted: "rgba(239, 254, 147, 0.2)",
           },
           dark: {
-            DEFAULT: "#0A0909",
-            surface: "#161414",
-            elevated: "#221F1F",
+            DEFAULT: "#111827",
+            surface: "#172033",
+            elevated: "#1F2937",
           },
           text: {
-            primary: "#FAFAFA",
-            muted: "#A19D9D",
-            strong: "#0A0909",
+            primary: "#111827",
+            muted: "#6B7280",
+            strong: "#111827",
           },
         },
       },
@@ -65,8 +65,8 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-soft":
-          "linear-gradient(135deg, rgba(255,90,54,0.16) 0%, rgba(239,254,147,0.18) 100%)",
-        "gradient-dark": "linear-gradient(180deg, #0A0909 0%, #161414 100%)",
+          "linear-gradient(135deg, rgba(255,90,54,0.08) 0%, rgba(239,254,147,0.12) 100%)",
+        "gradient-dark": "linear-gradient(180deg, #111827 0%, #172033 100%)",
         "hero-glow":
           "conic-gradient(from 180deg at 50% 50%, rgba(255,90,54,0.2) 0deg, rgba(239,254,147,0.16) 180deg, rgba(255,90,54,0.2) 360deg)",
       },
@@ -85,9 +85,9 @@ module.exports = {
         },
       },
       boxShadow: {
-        card: "0 24px 60px rgba(0, 0, 0, 0.28)",
-        "card-hover": "0 28px 72px rgba(0, 0, 0, 0.34)",
-        glass: "inset 0 1px 0 rgba(255,255,255,0.04), 0 24px 60px rgba(0, 0, 0, 0.32)",
+        card: "0 18px 40px rgba(17, 24, 39, 0.08)",
+        "card-hover": "0 24px 52px rgba(17, 24, 39, 0.12)",
+        glass: "inset 0 1px 0 rgba(255,255,255,0.04), 0 24px 60px rgba(17, 24, 39, 0.28)",
         "glow-coral": "0 0 20px -5px rgba(255, 90, 54, 0.5)",
         "glow-lime": "0 0 20px -5px rgba(239, 254, 147, 0.5)",
       },

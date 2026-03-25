@@ -32,7 +32,7 @@ export function Sponsors() {
             items={sponsors.map((sponsor) => (
               <div
                 key={sponsor}
-                className="flex h-16 w-[160px] max-w-full shrink-0 items-center justify-center rounded-[20px] border border-white/[0.08] bg-white/[0.03] px-4 text-center font-heading text-h5 text-claw-text-muted shadow-glass grayscale opacity-60 transition duration-300 hover:text-claw-lime hover:grayscale-0 hover:opacity-100 sm:w-[180px] sm:px-8"
+                className="flex h-16 w-[160px] max-w-full shrink-0 items-center justify-center rounded-[20px] border border-slate-200 bg-white px-4 text-center font-heading text-h5 text-claw-text-muted shadow-card grayscale opacity-60 transition duration-300 hover:text-claw-lime hover:grayscale-0 hover:opacity-100 sm:w-[180px] sm:px-8"
               >
                 {sponsor}
               </div>

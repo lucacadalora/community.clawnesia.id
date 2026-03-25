@@ -22,7 +22,7 @@ const personas = [
     title: "Freelancer & Agency",
     description:
       "Satu AI agent bisa handle pekerjaan 3 asisten virtual untuk tim kamu.",
-    accent: "bg-claw-dark-elevated text-claw-text-primary",
+    accent: "bg-[#111827] text-white",
     icon: "💼",
   },
   {
@@ -36,7 +36,7 @@ const personas = [
 
 export function ValueProp() {
   return (
-    <section className="section-shell dot-pattern">
+    <section className="section-shell bg-[#fafafa]">
       <div className="section-inner">
         <ScrollReveal className="max-w-3xl">
           <p className="eyebrow text-claw-lime">Value Prop</p>
@@ -54,7 +54,7 @@ export function ValueProp() {
               <motion.article
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="flex h-full w-full min-w-0 max-w-full flex-col overflow-hidden rounded-[24px] border border-white/[0.08] bg-white/[0.03] p-8 shadow-glass transition-shadow duration-300 hover:shadow-card-hover"
+                className="flex h-full w-full min-w-0 max-w-full flex-col overflow-hidden rounded-[24px] border border-slate-200 bg-white p-8 shadow-card transition-shadow duration-300 hover:shadow-card-hover"
               >
                 <div
                   className={`mb-8 flex h-12 w-12 items-center justify-center rounded-full text-body ${persona.accent}`}

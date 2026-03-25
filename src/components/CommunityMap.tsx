@@ -18,12 +18,12 @@ const cities = [
 
 export function CommunityMap() {
   return (
-    <section className="section-shell bg-claw-dark text-claw-text-primary">
+    <section className="section-shell bg-[#111827] text-white">
       <div className="section-inner-wide">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <ScrollReveal className="min-w-0">
             <p className="eyebrow text-claw-lime">Community</p>
-            <h2 className="mt-4 font-heading text-h3 font-semibold text-claw-text-primary md:text-h2">
+            <h2 className="mt-4 font-heading text-h3 font-semibold text-white md:text-h2">
               Bergabung dengan builder yang sudah duluan
             </h2>
             <a
@@ -45,8 +45,8 @@ export function CommunityMap() {
                       key={item}
                       className="rounded-[24px] border border-white/[0.08] bg-white/[0.03] p-5 shadow-glass"
                     >
-                      <p className="font-heading text-h5 text-claw-text-primary">{item}</p>
-                      <p className="mt-2 text-body-sm text-claw-text-muted">
+                      <p className="font-heading text-h5 text-white">{item}</p>
+                      <p className="mt-2 text-body-sm text-white/70">
                         Tempat ngobrol soal AI agent yang beneran dipakai di bisnis harian.
                       </p>
                     </div>
@@ -60,7 +60,7 @@ export function CommunityMap() {
         <div className="mt-12">
           <Marquee
             className="border-y border-white/10 py-5"
-            trackClassName="font-heading text-h4 text-claw-text-muted md:text-h3"
+            trackClassName="font-heading text-h4 text-white/60 md:text-h3"
             items={cities.map((city) => (
               <span key={city} className="inline-flex items-center gap-4">
                 <span>{city}</span>

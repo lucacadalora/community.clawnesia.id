@@ -28,7 +28,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="section-shell dot-pattern">
+    <section className="section-shell bg-white">
       <div className="section-inner">
         <ScrollReveal className="max-w-3xl">
           <p className="eyebrow text-claw-lime">Testimoni</p>
@@ -45,7 +45,7 @@ export function Testimonials() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.7, ease: framerEase }}
-                className="flex h-full w-full min-w-0 max-w-full flex-col justify-between rounded-[24px] border border-white/[0.08] bg-white/[0.03] p-8 shadow-glass"
+                className="flex h-full w-full min-w-0 max-w-full flex-col justify-between rounded-[24px] border border-slate-200 bg-white p-8 shadow-card"
               >
                 <p className="text-body italic text-claw-text-muted md:text-body-lg">
                   “{testimonial.quote}”

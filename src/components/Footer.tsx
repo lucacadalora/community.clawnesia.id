@@ -2,11 +2,11 @@ const footerLinks = ["Privacy", "Terms", "Instagram", "TikTok", "WhatsApp"];
 
 export function Footer() {
   return (
-    <footer className="section-shell bg-claw-dark pb-12 pt-24 text-claw-text-primary">
+    <footer className="section-shell bg-[#111827] pb-12 pt-24 text-white">
       <div className="section-inner">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <a href="#" className="font-heading text-h5 text-claw-text-primary">
+            <a href="#" className="font-heading text-h5 text-white">
               Clawnesia Build
             </a>
             <p className="mt-4 max-w-xs text-body-sm text-claw-text-muted">

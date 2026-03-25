@@ -4,7 +4,7 @@ export function FounderLetter() {
   return (
     <section className="section-shell dot-pattern">
       <div className="section-inner">
-        <ScrollReveal className="relative w-full max-w-full overflow-hidden rounded-[32px] border border-white/[0.08] bg-white/[0.03] p-6 shadow-glass sm:p-8 md:p-12">
+        <ScrollReveal className="relative w-full max-w-full overflow-hidden rounded-[32px] border border-slate-200 bg-white p-6 shadow-card sm:p-8 md:p-12">
           <div className="absolute right-8 top-8 hidden h-28 w-28 rounded-[28px] bg-gradient-soft md:block" />
           <div className="mx-auto max-w-[680px]">
             <p className="eyebrow text-claw-lime">Founder Letter</p>

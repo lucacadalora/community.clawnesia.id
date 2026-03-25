@@ -46,7 +46,7 @@ export function Ecosystem() {
   };
 
   return (
-    <section className="section-shell dot-pattern">
+    <section className="section-shell bg-[#fafafa]">
       <div className="section-inner">
         <ScrollReveal className="max-w-3xl">
           <p className="eyebrow text-claw-lime">Ecosystem</p>
@@ -61,7 +61,7 @@ export function Ecosystem() {
           </a>
         </ScrollReveal>
 
-        <div className="mt-10 flex w-full max-w-full flex-wrap rounded-[28px] border border-white/10 bg-claw-dark-surface p-2 sm:inline-flex sm:w-auto sm:flex-nowrap sm:rounded-full">
+        <div className="mt-10 flex w-full max-w-full flex-wrap rounded-[28px] border border-slate-200 bg-white p-2 shadow-card sm:inline-flex sm:w-auto sm:flex-nowrap sm:rounded-full">
           {tabs.map((tab) => {
             const isActive = tab === activeTab;
 
@@ -73,7 +73,7 @@ export function Ecosystem() {
                 className={`min-w-0 flex-1 rounded-full px-4 py-3 font-ui text-body-sm font-semibold transition sm:flex-none sm:px-5 ${
                   isActive
                     ? "bg-claw-coral text-white shadow-glow-coral"
-                    : "text-claw-text-muted hover:bg-white/5 hover:text-claw-text-primary"
+                    : "text-claw-text-muted hover:bg-slate-50 hover:text-claw-text-primary"
                 }`}
               >
                 {tabLabels[tab]}
@@ -85,7 +85,7 @@ export function Ecosystem() {
         <div className="mt-10">
           {activeTab === "Learn" && (
             <ScrollReveal>
-              <div className="grid gap-8 rounded-[32px] border border-white/[0.08] bg-gradient-soft p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
+              <div className="grid gap-8 rounded-[32px] border border-slate-200 bg-gradient-soft p-6 shadow-card sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
                 <div className="min-w-0">
                   <p className="eyebrow text-claw-lime">Belajar</p>
                   <h3 className="mt-4 font-heading text-h3 font-semibold text-claw-text-primary">
@@ -97,12 +97,12 @@ export function Ecosystem() {
                     <li>Template siap pakai untuk langsung eksekusi</li>
                   </ul>
                 </div>
-                <div className="min-w-0 rounded-[28px] border border-white/[0.08] bg-white/[0.03] p-5 shadow-glass backdrop-blur sm:p-6">
+                <div className="min-w-0 rounded-[28px] border border-slate-200 bg-white p-5 shadow-card sm:p-6">
                   <div className="grid gap-4 md:grid-cols-2">
                     {["OpenClaw setup", "WhatsApp flow", "Riset buyer", "Ops dashboard"].map((item) => (
                       <div
                         key={item}
-                        className="rounded-[22px] border border-white/[0.08] bg-white/[0.03] p-5 shadow-glass"
+                        className="rounded-[22px] border border-slate-200 bg-white p-5 shadow-card"
                       >
                         <p className="pill-tag">{item}</p>
                         <p className="mt-4 font-heading text-h5 text-claw-text-primary">
@@ -121,7 +121,7 @@ export function Ecosystem() {
 
           {activeTab === "Build" && (
             <ScrollReveal>
-              <div className="rounded-[32px] border border-white/[0.08] bg-claw-dark-surface p-6 sm:p-8 lg:p-10">
+              <div className="rounded-[32px] border border-slate-200 bg-white p-6 shadow-card sm:p-8 lg:p-10">
                 <p className="eyebrow text-claw-lime">Bangun</p>
                 <h3 className="mt-4 font-heading text-h3 font-semibold text-claw-text-primary">
                   Karena paham tanpa praktek = nol
@@ -132,7 +132,7 @@ export function Ecosystem() {
                       key={project.title}
                       whileHover={{ y: -6, scale: 1.01 }}
                       transition={{ duration: 0.3, ease: "easeOut" }}
-                      className="min-w-0 rounded-[20px] border border-white/[0.08] bg-white/[0.03] p-6 shadow-glass"
+                      className="min-w-0 rounded-[20px] border border-slate-200 bg-white p-6 shadow-card"
                     >
                       <div className="flex items-start justify-between gap-3">
                         <span className="pill-tag">{project.company}</span>
@@ -147,25 +147,25 @@ export function Ecosystem() {
                         Project {index + 1} yang dirancang buat langsung dipakai di bisnis nyata.
                       </p>
                       <div className="mt-6 grid grid-cols-2 gap-3 text-body-sm text-claw-text-primary">
-                        <div className="rounded-2xl bg-claw-dark-elevated p-3">
+                        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
                           <p className="font-ui text-caption uppercase tracking-[0.16em] text-claw-text-muted">
                             Harga
                           </p>
                           <p className="mt-1 font-heading text-h5">{project.earnings}</p>
                         </div>
-                        <div className="rounded-2xl bg-claw-dark-elevated p-3">
+                        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
                           <p className="font-ui text-caption uppercase tracking-[0.16em] text-claw-text-muted">
                             Status
                           </p>
                           <p className="mt-1 font-heading text-body">{project.status}</p>
                         </div>
-                        <div className="rounded-2xl bg-claw-dark-elevated p-3">
+                        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
                           <p className="font-ui text-caption uppercase tracking-[0.16em] text-claw-text-muted">
                             Level
                           </p>
                           <p className="mt-1 font-heading text-body">{project.difficulty}</p>
                         </div>
-                        <div className="rounded-2xl bg-claw-dark-elevated p-3">
+                        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
                           <p className="font-ui text-caption uppercase tracking-[0.16em] text-claw-text-muted">
                             Durasi
                           </p>
@@ -181,7 +181,7 @@ export function Ecosystem() {
 
           {activeTab === "Earn" && (
             <ScrollReveal>
-              <div className="grid gap-6 rounded-[32px] bg-claw-dark p-6 text-claw-text-primary sm:p-8 lg:grid-cols-3 lg:p-10">
+              <div className="grid gap-6 rounded-[32px] border border-slate-200 bg-white p-6 text-claw-text-primary shadow-card sm:p-8 lg:grid-cols-3 lg:p-10">
                 {[
                   {
                     title: "Freelance",
@@ -198,7 +198,7 @@ export function Ecosystem() {
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.03] p-6 shadow-glass"
+                    className="min-w-0 rounded-[24px] border border-slate-200 bg-white p-6 shadow-card"
                   >
                     <p className="pill-tag">{item.title}</p>
                     <p className="mt-5 font-heading text-h4 text-claw-text-primary">{item.title}</p>
