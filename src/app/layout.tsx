@@ -26,8 +26,31 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Clawnesia Build",
-  description: "Komunitas builder Indonesia untuk deploy AI agents yang bekerja 24/7.",
+  title: "Clawnesia Build — Komunitas Builder AI Agents #1 di Indonesia",
+  description: "Deploy AI Agents. Bangun Bisnis. Temukan Komunitasmu. Komunitas builder Indonesia untuk deploy AI agents yang bekerja 24/7.",
+  metadataBase: new URL("https://community.clawnesia.id"),
+  openGraph: {
+    title: "Clawnesia Build",
+    description: "Komunitas Builder AI Agents #1 di Indonesia 🇮🇩",
+    url: "https://community.clawnesia.id",
+    siteName: "Clawnesia Build",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1792,
+        height: 1024,
+        alt: "Clawnesia Build — Komunitas Builder AI Agents #1 di Indonesia",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clawnesia Build",
+    description: "Komunitas Builder AI Agents #1 di Indonesia 🇮🇩",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
