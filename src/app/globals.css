@@ -1,26 +1,115 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-brand-coral: #ff5a36;
+  --color-brand-coral-light: #ff8a6b;
+  --color-brand-coral-dark: #d43f1e;
+  --color-brand-lime: #effe93;
+  --color-brand-lime-muted: rgba(239, 254, 147, 0.2);
+  --bg-main: #0a0909;
+  --bg-surface: #161414;
+  --bg-surface-elevated: #221f1f;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: var(--color-brand-coral);
+  --text-primary: #fafafa;
+  --text-secondary: #a19d9d;
+  --text-on-coral: #ffffff;
+  --text-on-lime: #0a0909;
+  --gradient-soft: linear-gradient(135deg, rgba(255, 90, 54, 0.16) 0%, rgba(239, 254, 147, 0.18) 100%);
+  --gradient-dark: linear-gradient(180deg, #0a0909 0%, #161414 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-main);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--text-primary);
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+}
+
+::selection {
+  background: var(--color-brand-lime);
+  color: var(--text-on-lime);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: var(--border-subtle);
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-host-grotesk), sans-serif;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply w-full max-w-full overflow-x-hidden bg-claw-dark text-claw-text-primary;
+  }
+
+  .section-shell {
+    @apply w-full max-w-full overflow-x-hidden px-4 py-3xl sm:px-md md:px-xl md:py-4xl lg:px-4xl lg:py-5xl;
+  }
+
+  .section-inner {
+    @apply mx-auto w-full max-w-full min-w-0 md:max-w-container;
+  }
+
+  .section-inner-wide {
+    @apply mx-auto w-full max-w-full min-w-0 md:max-w-wide;
+  }
+
+  .eyebrow {
+    @apply font-ui text-caption font-semibold uppercase tracking-[0.22em] text-claw-lime;
+  }
+
+  .pill-tag {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-claw-lime-muted px-3 py-1 font-ui text-caption font-semibold text-claw-lime;
+  }
+
+  .dot-pattern {
+    background-color: var(--bg-main);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .grid-overlay {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
 }
