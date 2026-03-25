@@ -3,22 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --color-brand-coral: #ff5a36;
-  --color-brand-coral-light: #ff8a6b;
-  --color-brand-coral-dark: #d43f1e;
-  --color-brand-lime: #effe93;
-  --color-brand-lime-muted: rgba(239, 254, 147, 0.2);
-  --bg-main: #fafafa;
-  --bg-surface: #ffffff;
-  --bg-surface-elevated: #f3f4f6;
-  --border-subtle: rgba(17, 24, 39, 0.12);
-  --border-focus: var(--color-brand-coral);
-  --text-primary: #111827;
-  --text-secondary: #6b7280;
-  --text-on-coral: #ffffff;
-  --text-on-lime: #111827;
-  --gradient-soft: linear-gradient(135deg, rgba(255, 90, 54, 0.08) 0%, rgba(239, 254, 147, 0.12) 100%);
-  --gradient-dark: linear-gradient(180deg, #111827 0%, #172033 100%);
+  --color-primary: #ff8f50;
+  --color-primary-hover: #e87b3e;
+  --color-cream: #fdfcf9;
+  --color-card: #ffffff;
+  --color-slate: #221f1e;
+  --color-slate-card: #2a2625;
+  --color-sand: #f3efe9;
+  --color-sand-grid: #ebe5df;
+  --color-carbon: #1c1a19;
+  --color-stone: #5e5955;
+  --color-pebble: #8e8782;
+  --color-terracotta: #c25e20;
+  --color-terracotta-bg: #ffebe0;
+  --color-success: #45b168;
+  --bg-main: var(--color-cream);
+  --bg-surface: var(--color-card);
+  --border-subtle: var(--color-sand);
+  --border-focus: var(--color-primary);
+  --text-primary: var(--color-carbon);
+  --text-secondary: var(--color-stone);
+  --text-muted: var(--color-pebble);
+  --text-on-primary: #ffffff;
+  --shadow-card: 0px 12px 32px rgba(45, 41, 38, 0.04);
 }
 
 html {
@@ -34,8 +41,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-brand-lime);
-  color: var(--text-on-lime);
+  background: var(--color-primary);
+  color: var(--text-on-primary);
 }
 
 @layer base {
@@ -93,23 +100,23 @@ body {
   }
 
   .eyebrow {
-    @apply font-ui text-caption font-semibold uppercase tracking-[0.22em] text-claw-lime;
+    @apply font-ui text-caption font-semibold uppercase tracking-eyebrow text-terracotta;
   }
 
   .pill-tag {
-    @apply inline-flex items-center rounded-full border border-claw-lime/40 bg-claw-lime-muted px-3 py-1 font-ui text-caption font-semibold text-[color:var(--text-on-lime)] shadow-glow-lime;
+    @apply inline-flex items-center rounded-full bg-terracotta-bg px-3 py-1 font-ui text-caption font-semibold text-terracotta;
   }
 
   .dot-pattern {
     background-color: var(--bg-main);
-    background-image: radial-gradient(circle, rgba(17, 24, 39, 0.12) 1px, transparent 1px);
+    background-image: radial-gradient(circle, var(--color-sand-grid) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 
   .grid-overlay {
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      linear-gradient(rgba(54, 50, 48, 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(54, 50, 48, 0.6) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 }

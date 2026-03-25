@@ -18,27 +18,41 @@ module.exports = {
         ui: ['var(--font-plus-jakarta-sans)', "sans-serif"],
       },
       colors: {
-        claw: {
-          coral: {
-            DEFAULT: "#FF5A36",
-            light: "#FF8A6B",
-            dark: "#D43F1E",
-          },
-          lime: {
-            DEFAULT: "#EFFE93",
-            muted: "rgba(239, 254, 147, 0.2)",
-          },
-          dark: {
-            DEFAULT: "#111827",
-            surface: "#172033",
-            elevated: "#1F2937",
-          },
-          text: {
-            primary: "#111827",
-            muted: "#6B7280",
-            strong: "#111827",
-          },
+        primary: {
+          DEFAULT: "#FF8F50",
+          hover: "#E87B3E",
         },
+        cream: {
+          DEFAULT: "#FDFCF9",
+          card: "#FFFFFF",
+        },
+        slate: {
+          DEFAULT: "#221F1E",
+          card: "#2A2625",
+        },
+        sand: {
+          DEFAULT: "#F3EFE9",
+          grid: "#EBE5DF",
+        },
+        carbon: {
+          DEFAULT: "#1C1A19",
+        },
+        stone: {
+          DEFAULT: "#5E5955",
+          muted: "#8E8782",
+        },
+        terracotta: {
+          bg: "#FFEBE0",
+          DEFAULT: "#C25E20",
+        },
+        success: {
+          DEFAULT: "#45B168",
+        },
+      },
+      letterSpacing: {
+        tightest: "-0.03em",
+        tighter: "-0.02em",
+        eyebrow: "0.05em",
       },
       fontSize: {
         display: ["5rem", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
@@ -64,11 +78,10 @@ module.exports = {
         "5xl": "8rem",
       },
       backgroundImage: {
-        "gradient-soft":
-          "linear-gradient(135deg, rgba(255,90,54,0.08) 0%, rgba(239,254,147,0.12) 100%)",
-        "gradient-dark": "linear-gradient(180deg, #111827 0%, #172033 100%)",
-        "hero-glow":
-          "conic-gradient(from 180deg at 50% 50%, rgba(255,90,54,0.2) 0deg, rgba(239,254,147,0.16) 180deg, rgba(255,90,54,0.2) 360deg)",
+        "dot-grid":
+          "radial-gradient(circle, rgba(235,229,223,0.95) 1px, transparent 1px)",
+        "dot-grid-dark":
+          "radial-gradient(circle, rgba(54,50,48,0.9) 1px, transparent 1px)",
       },
       animation: {
         marquee: "marquee 30s linear infinite",
@@ -85,11 +98,9 @@ module.exports = {
         },
       },
       boxShadow: {
-        card: "0 18px 40px rgba(17, 24, 39, 0.08)",
-        "card-hover": "0 24px 52px rgba(17, 24, 39, 0.12)",
-        glass: "inset 0 1px 0 rgba(255,255,255,0.04), 0 24px 60px rgba(17, 24, 39, 0.28)",
-        "glow-coral": "0 0 20px -5px rgba(255, 90, 54, 0.5)",
-        "glow-lime": "0 0 20px -5px rgba(239, 254, 147, 0.5)",
+        card: "0px 12px 32px rgba(45,41,38,0.04)",
+        btn: "0px 10px 24px rgba(255,143,80,0.24)",
+        "btn-hover": "0px 14px 28px rgba(255,143,80,0.32)",
       },
       transitionTimingFunction: {
         framer: "cubic-bezier(0.16, 1, 0.3, 1)",

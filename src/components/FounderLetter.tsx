@@ -4,14 +4,14 @@ export function FounderLetter() {
   return (
     <section className="section-shell dot-pattern">
       <div className="section-inner">
-        <ScrollReveal className="relative w-full max-w-full overflow-hidden rounded-[32px] border border-slate-200 bg-white p-6 shadow-card sm:p-8 md:p-12">
-          <div className="absolute right-8 top-8 hidden h-28 w-28 rounded-[28px] bg-gradient-soft md:block" />
+        <ScrollReveal className="relative w-full max-w-full overflow-hidden rounded-[32px] border border-sand bg-white p-6 shadow-card sm:p-8 md:p-12">
+          <div className="absolute right-8 top-8 hidden h-28 w-28 rounded-[28px] bg-[radial-gradient(circle_at_top,rgba(255,143,80,0.18),rgba(255,235,224,0.9))] md:block" />
           <div className="mx-auto max-w-[680px]">
-            <p className="eyebrow text-claw-lime">Founder Letter</p>
-            <h2 className="mt-4 font-heading text-h3 font-semibold text-claw-text-primary md:text-h2">
+            <p className="eyebrow">Founder Letter</p>
+            <h2 className="mt-4 font-heading text-h3 font-semibold text-carbon md:text-h2">
               Dari Luca & David
             </h2>
-            <div className="mt-8 space-y-6 text-body text-claw-text-muted md:text-body-lg md:leading-[1.8]">
+            <div className="mt-8 space-y-6 text-body text-stone md:text-body-lg md:leading-[1.8]">
               <p>
                 Kami berdua percaya AI agents akan mengubah cara Indonesia berbisnis. Bukan
                 teori, bukan sekadar prompting, tapi sistem yang benar-benar jalan 24/7 buat
@@ -31,18 +31,18 @@ export function FounderLetter() {
             </div>
             <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="font-ui text-body font-semibold text-claw-text-primary">
+                <p className="font-ui text-body font-semibold text-carbon">
                   Luca Cada Lora
                 </p>
-                <p className="font-ui text-body-sm text-claw-text-muted">
+                <p className="font-ui text-body-sm text-stone-muted">
                   Founder jatevo.ai, CEO aiccelerate.id
                 </p>
               </div>
               <div>
-                <p className="font-ui text-body font-semibold text-claw-text-primary">
+                <p className="font-ui text-body font-semibold text-carbon">
                   David Alfa Sunarna
                 </p>
-                <p className="font-ui text-body-sm text-claw-text-muted">
+                <p className="font-ui text-body-sm text-stone-muted">
                   Founder webekspor.id, CTO Bisa Ekspor
                 </p>
               </div>

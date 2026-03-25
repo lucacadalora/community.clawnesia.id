@@ -49,9 +49,9 @@ const line = {
 
 export function Hero() {
   return (
-    <section className="dot-pattern relative min-h-screen overflow-hidden bg-[#fafafa] text-[#111827]">
-      <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(239,254,147,0.18),transparent_60%)]" />
-      <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,rgba(255,90,54,0.1),transparent_55%)]" />
+    <section className="dot-pattern relative min-h-screen overflow-hidden bg-cream text-carbon">
+      <div className="absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(255,143,80,0.14),transparent_60%)]" />
+      <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,rgba(194,94,32,0.08),transparent_55%)]" />
       <div className="section-shell relative flex min-h-screen flex-col">
         <motion.header
           initial={{ opacity: 0 }}
@@ -67,7 +67,7 @@ export function Hero() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-ui text-caption text-[#111827] hover:text-claw-coral"
+                className="font-ui text-caption text-carbon hover:text-primary"
               >
                 {link.label}
               </a>
@@ -87,7 +87,7 @@ export function Hero() {
                 <motion.h1
                   key={lineText}
                   variants={line}
-                  className="font-heading text-[1.5rem] font-bold leading-[1.1] tracking-[-0.02em] text-[#111827] md:text-h1 lg:text-display"
+                  className="font-heading text-[1.5rem] font-bold leading-[1.1] tracking-tighter text-carbon md:text-h1 lg:text-display"
                 >
                   {lineText}
                 </motion.h1>
@@ -98,7 +98,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 0.8, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8, ease: framerEase }}
-              className="mt-6 max-w-2xl text-body text-[#6b7280] md:text-body-lg"
+              className="mt-6 max-w-2xl text-body text-stone md:text-body-lg"
             >
               Komunitas builder Indonesia yang menggunakan AI agents untuk otomasi bisnis nyata.
             </motion.p>
@@ -113,7 +113,7 @@ export function Hero() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="#join"
-                className="block w-full max-w-full whitespace-normal rounded-full bg-claw-coral px-5 py-3 text-center font-ui text-[0.85rem] font-semibold text-white shadow-glow-coral transition-colors hover:bg-claw-coral-light md:w-auto md:px-8 md:py-4 md:text-body"
+                className="block w-full max-w-full whitespace-normal rounded-full bg-primary px-5 py-3 text-center font-ui text-[0.85rem] font-semibold text-white shadow-btn transition-all hover:bg-primary-hover hover:shadow-btn-hover md:w-auto md:px-8 md:py-4 md:text-body"
               >
                 Gabung Komunitas
               </motion.a>
@@ -121,19 +121,19 @@ export function Hero() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="https://clawnesia.id"
-                className="block w-full max-w-full whitespace-normal rounded-full border border-slate-300 bg-white px-5 py-3 text-center font-ui text-[0.85rem] font-semibold text-[#111827] shadow-card transition-colors hover:bg-slate-50 md:w-auto md:px-8 md:py-4 md:text-body"
+                className="block w-full max-w-full whitespace-normal rounded-full border border-sand bg-white px-5 py-3 text-center font-ui text-[0.85rem] font-semibold text-carbon shadow-card transition-colors hover:bg-sand/50 md:w-auto md:px-8 md:py-4 md:text-body"
               >
                 Lihat Blueprint
               </motion.a>
             </motion.div>
           </div>
 
-          <div className="relative w-full max-w-full overflow-hidden rounded-[20px] border border-slate-200 bg-white p-3 shadow-card md:rounded-[32px] md:p-4">
+          <div className="relative w-full max-w-full overflow-hidden rounded-[20px] border border-sand bg-white p-3 shadow-card md:rounded-[32px] md:p-4">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3 px-2">
-              <p className="font-ui text-caption uppercase tracking-[0.2em] text-[#6b7280]">
+              <p className="font-ui text-caption uppercase tracking-eyebrow text-stone-muted">
                 Use case AI agents
               </p>
-              <span className="rounded-full border border-claw-lime/30 bg-claw-lime-muted px-3 py-1 font-ui text-caption text-[#111827] shadow-glow-lime">
+              <span className="rounded-full bg-terracotta-bg px-3 py-1 font-ui text-caption text-terracotta">
                 OpenClaw workflows
               </span>
             </div>
@@ -145,15 +145,15 @@ export function Hero() {
               {[...heroImages, ...heroImages].map((label, index) => (
                 <div
                   key={`${label}-${index}`}
-                  className="flex h-48 w-[220px] shrink-0 flex-col justify-between rounded-[20px] border border-slate-200 bg-white p-4 shadow-card sm:h-56 sm:w-[260px] sm:rounded-[28px] sm:p-5 md:h-72 md:w-[320px]"
+                  className="flex h-48 w-[220px] shrink-0 flex-col justify-between rounded-[20px] border border-sand bg-white p-4 shadow-card sm:h-56 sm:w-[260px] sm:rounded-[28px] sm:p-5 md:h-72 md:w-[320px]"
                 >
                   <div className="flex items-center justify-between">
                     <span className="pill-tag">Clawnesia</span>
-                    <span className="h-3 w-3 rounded-full bg-claw-lime shadow-glow-lime" />
+                    <span className="h-3 w-3 rounded-full bg-success" />
                   </div>
                   <div>
-                    <p className="font-heading text-h5 text-[#111827]">{label}</p>
-                    <p className="mt-2 max-w-[16rem] text-body-sm text-[#6b7280]">
+                    <p className="font-heading text-h5 text-carbon">{label}</p>
+                    <p className="mt-2 max-w-[16rem] text-body-sm text-stone">
                       AI agent siap dipakai untuk operasional, riset, dan growth tim kecil.
                     </p>
                   </div>

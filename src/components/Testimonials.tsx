@@ -28,11 +28,11 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="section-shell bg-white">
+    <section className="section-shell bg-cream">
       <div className="section-inner">
         <ScrollReveal className="max-w-3xl">
-          <p className="eyebrow text-claw-lime">Testimoni</p>
-          <h2 className="mt-4 font-heading text-h3 font-semibold text-claw-text-primary md:text-h2">
+          <p className="eyebrow">Testimoni</p>
+          <h2 className="mt-4 font-heading text-h3 font-semibold text-carbon md:text-h2">
             Hasil nyata dari builder Indonesia
           </h2>
         </ScrollReveal>
@@ -45,23 +45,23 @@ export function Testimonials() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.7, ease: framerEase }}
-                className="flex h-full w-full min-w-0 max-w-full flex-col justify-between rounded-[24px] border border-slate-200 bg-white p-8 shadow-card"
+                className="flex h-full w-full min-w-0 max-w-full flex-col justify-between rounded-[24px] border border-sand bg-white p-8 shadow-card"
               >
-                <p className="text-body italic text-claw-text-muted md:text-body-lg">
+                <p className="text-body italic text-stone md:text-body-lg">
                   “{testimonial.quote}”
                 </p>
                 <div className="mt-8 flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-claw-lime font-heading text-body font-semibold text-claw-text-strong shadow-glow-lime">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-terracotta-bg font-heading text-body font-semibold text-terracotta">
                     {testimonial.name
                       .split(" ")
                       .map((part) => part[0])
                       .join("")}
                   </div>
                   <div>
-                    <p className="font-ui text-body font-semibold text-claw-text-primary">
+                    <p className="font-ui text-body font-semibold text-carbon">
                       {testimonial.name}
                     </p>
-                    <p className="font-ui text-caption text-claw-text-muted">
+                    <p className="font-ui text-caption text-stone-muted">
                       {testimonial.title}
                     </p>
                   </div>
